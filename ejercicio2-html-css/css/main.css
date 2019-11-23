@@ -1,0 +1,113 @@
+*{ /*selector universal, tipo de letra*/
+    font-family:arial;
+}
+
+li{/*selector por tagname, subrayado de todo el texto de las listas*/
+    text-decoration:underline;
+}
+
+.font-color-peru{/*selector por clase*/
+    color:peru;
+}
+
+#main-header{/*Selector por id*/
+    font-style:italic;
+    color: tomato;
+
+}
+
+#main-header.font-color-pink{/*Selector combinado*/
+    color:pink;
+}
+
+ol li{/*Selector anidado, formato de listas debajo de item 5*/
+    font-weight:bold;
+    text-transform:uppercase;
+}
+
+.second-ordered-list li{
+    font-size:18px;
+    font-weight:normal;
+    text-transform: lowercase;
+}
+
+.nested-test > ul{/*selector de hijo inmediato*/
+    list-style:none;
+    color:black;
+}
+
+.green-square{
+    width:100px;
+    height:100px;
+    background:green;
+    background: -webkit-linear-gradient(green,blue);
+
+}
+
+.green-square + div{/*hermanos adyacentes, afecta a los cuadrados que se presentan de forma circundante*/
+    width:100px;
+    height:100px;
+    background-color:pink;
+}
+
+.green-square ~ div{/*todos los hermanos, todos los cuadrados se regiran por esta regla*/
+    width:100px;
+    height:100px;
+    background: #333;
+    margin-bottom:5px;
+}
+
+.green-square ~ section:last-of-type{/*afecta en el cambio de color de section - asdf*/
+    color:yellow; 
+    border:1px solid blue;
+}
+
+.pseudo-selectors{
+    border:1px solid black;
+    border-radius:5px;
+    box-shadow:5px 5px 5px #aaa;
+    padding:10px;
+    list-style:none;
+}
+
+.pseudo-selectors > li:first-of-type{
+    font-size:24px;
+    color:magenta;
+}
+
+.pseudo-selectors li:last-of-type{
+    font-size:6px;
+}
+
+.pseudo-selectors li:nth-of-type(4){
+    color:black;
+}
+
+.pseudo-selectors li:nth-of-type(odd){
+    background:slategray;
+}
+
+.pseudo-selectors li:nth-of-type(even){
+    background:skyblue;
+}
+.pseudo-selectors li:nth-of-type(3n){
+    text-align:center;
+    color:white;
+    background:black
+}
+
+.pseudo-selectors li:nth-of-type(3n + 2){
+    text-align:right;
+    color:white;
+    background:#cacaca;
+    border-top:1px solid red;
+    border-right:5px solid green;
+    margin:15px 5px 0px;
+}
+
+.pseudo-selectors li:not(:first-of-type):hover{
+    background:white;
+    color:black;
+    cursor:pointer
+}
+
