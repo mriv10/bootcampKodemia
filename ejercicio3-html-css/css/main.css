@@ -1,0 +1,67 @@
+*{/*selector universal- Características generales*/
+    font-family: verdana;
+    text-align: center;
+    color: lightcoral;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.bord-pad{ /* Características compartidas en header, nav y footer*/
+    border: 5px solid black;
+    padding: 40px;
+}
+
+.bord-head{/*Características en heading*/
+    border: 5px solid black;
+    background: burlywood;
+    padding: 20px;
+}
+
+
+#main-header{/*gradiente en header (nota *1)*/
+    
+    background: -webkit-linear-gradient(cyan, white);/*------- Safari, Chrome|*/
+    background: -o-linear-gradient(cyan,white);/*------------- Opera|*/
+    background: -moz-linear-gradient(cyan,white);/*----------- Mozilla|*/
+    background: linear-gradient(cyan,white);/*---------------- Standard|*/
+}
+
+#main-nav{/*gradiente en nav*/
+    
+    background: -webkit-linear-gradient(yellow,white);
+    background: -o-linear-gradient(yellow,white);
+    background: -moz-linear-gradient(yellow,white);
+    background: linear-gradient(yellow,white);
+}
+
+#main-aside{/*Posicionamiento y características de bloque aside, (nota *2)/*/
+    
+    
+    position: absolute;
+    bottom:31%;
+    left:63.5%;
+    border: 5px solid black;
+    padding:170px 115px;
+    background:lavender;
+}
+
+#main-footer{/*gradiente en footer*/
+    
+    background: -webkit-linear-gradient(yellowgreen,white);
+    background: -o-linear-gradient(yellowgreen,white);
+    background: -moz-linear-gradient(yellowgreen,white);
+    background: linear-gradient(yellowgreen,white); 
+}
+
+.pseudo-selectors > ul{/*características que contiene section, heading y article "como bloque"*/
+    border:5px solid black;
+    border-radius:5px;
+    padding:10px;
+    height:300px;
+    width:60%;
+    list-style:none;
+}
+
+/* notas */
+/*1: pruebas en diferentes navegadores de gradiente.
+/*2: Posicionamiento de aside, encontrar forma de posicionamiento fija ante cambio de tamaño de ventana.
