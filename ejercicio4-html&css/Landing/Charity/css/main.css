@@ -1,0 +1,118 @@
+*{
+    font-family: Verdana; 
+}
+
+.container-header{/*---------------------------Header (Button Donate, mail, phone)*/
+    
+    background:#FF4800;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   
+}
+.header-item{
+    
+    width: 110px;
+    height: 20px;
+    padding: 20px;
+    background: #262222;
+    text-align: center;
+    color: white;
+    
+}
+
+.header-item.mail{
+
+    display: none;
+    
+}
+
+.header-item.phone{
+
+    display:none;
+}
+
+.header-item.button:hover{
+    cursor:pointer;
+}
+/*------------------------------------------ Nav Bar*/
+
+
+
+
+@media screen and (min-width: 768px){
+    
+
+    .container-header{
+
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+    }
+    /*.header-item{
+    
+        width: 110px;
+        height: 20px;
+        padding: 20px;
+        background: #262222;
+        text-align: center;
+        color: white;
+
+    }*/
+
+    .header-item.mail{
+        background: #FF4800;
+        width:40%;
+        display: block;
+
+    }
+
+    .header-item.phone{
+        background: #FF4800;
+        width: 40%;
+        display: block;
+
+    }
+    
+    
+}
+
+@media screen and (min-width: 1024px){
+    .container-header{
+
+        /*flex-wrap: wrap;*/
+        justify-content: center;
+
+    }
+    /*.header-item{ ---------------------------alineación item Donate visualización 1024 fix
+    
+        width: 110px;
+        height: 20px;
+        padding: 20px;
+        background: #262222;
+        text-align: center;
+        color: white;
+
+    }*/
+
+    .header-item.mail{
+        /*background: #FF4800;*/
+        width:25%;
+        text-align: right;
+        /*display: block;*/
+
+    }
+
+    .header-item.phone{
+        /*background: #FF4800;*/
+        width: 50%;
+        text-align: left;
+        /*display: block;*/
+
+    }
+    
+    
+}
+
+
+}
